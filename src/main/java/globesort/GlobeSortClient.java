@@ -52,7 +52,7 @@ public class GlobeSortClient {
         IntArray response = serverStub.sortIntegers(request);
         end = System.currentTimeMillis();
 
-        System.out.println("Application time: " + (values.length/(end - start)));
+        System.out.println("Application time: " + ((end - start)));
         System.out.println("Application throughput: " + (values.length/(end - start)));
 
         System.out.println("Sorting time: " + (response.getSortTime()));
